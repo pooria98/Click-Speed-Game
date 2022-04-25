@@ -71,8 +71,3 @@ h2 {
     border-radius: 50%;
     transition: 0.1s;
 }
-
-button:hover {
-    background-color: rgb(255, 0, 51);
-    box-shadow: 0 0 3px black inset;
-}

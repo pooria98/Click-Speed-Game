@@ -69,6 +69,7 @@ h2 {
     top: calc(50% - 1rem);
     left: calc(50% - 2.5rem);
     border-radius: 50%;
+    transition: 0.1s;
 }
 
 button:hover {

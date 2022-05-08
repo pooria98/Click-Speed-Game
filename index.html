@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>click on the button</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -21,6 +23,36 @@
         </div>
     </div>
 
+    <div class="difficulty-container">
+        <p id="easy">EASY</p>
+        <p id="normal">NORMAL</p>
+        <p id="hard">HARD</p>
+    </div>
+
+    <div class="result-container">
+        <p id="alertText"></p>
+        <p id="scoreP"></p>
+        <p>you survived for <span id="timeSurvived"></span> seconds</p>
+        <p id="resultSpeed"></p>
+        <button class="restart-btn">Restart</button>
+    </div>
+
+    <div class="game-info">
+        <h3>Rules:</h3>
+        <ul>
+            <li>click on the target as fast as you can</li>
+            <li>if your speed goes below the minimum click speed, you'll lose</li>
+            <li>the minimum click speed will increase based on the difficulty level</li>
+            <li>you'll lose if you misclick so try to be accurate!</li>
+        </ul>
+        <div class="close-btn">OK</div>
+        <div>
+            <input type="checkbox" id="check-box">
+            <label for="check-box">don't show again</label>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

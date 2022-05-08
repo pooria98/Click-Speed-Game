@@ -8,6 +8,50 @@ body {
     background-color: #222;
 }
 
+.game-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: darkslategray;
+    color: #fff;
+    z-index: 10;
+    width: 90%;
+    height: 95vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.game-info h3 {
+    font-size: 2rem;
+}
+
+.game-info li {
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.game-info .close-btn {
+    cursor: pointer;
+    background-color: crimson;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.close-btn:hover {
+    background-color: rgb(218, 0, 44);
+}
+
 .container {
     width: 80vw;
     height: 90vh;
@@ -70,4 +114,92 @@ h2 {
     left: calc(50% - 2.5rem);
     border-radius: 50%;
     transition: 0.1s;
+    cursor: pointer;
+}
+
+.alert-box {
+    width: 300px;
+    height: 150px;
+    background-color: crimson;
+    color: #fff;
+    margin: calc(50vh - 75px) auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 150px;
+    font-family: sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.alert-box:hover {
+    background-color: rgb(255, 0, 51);
+}
+
+.difficulty-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: crimson;
+    color: #fff;
+    z-index: 5;
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.difficulty-container p:hover {   
+    text-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.result-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: darkslategray;
+    color: #fff;
+    z-index: 6;
+    width: 30%;
+    height: 50vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.result-container p {
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 0 black;
+}
+
+.restart-btn {
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: coral;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.restart-btn:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }

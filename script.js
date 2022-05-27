@@ -6,14 +6,14 @@ checkBox.oninput = function(){
     checkBox.toggleAttribute('checked');
 };
 
-if (localStorage.getItem("firstTime")==null) {
+if (sessionStorage.getItem("firstTime")==null) {
     gameInfo.style.display = "flex";
 }
 
 closeBtn.onclick = function(){
     gameInfo.style.display = "none";
     if (checkBox.hasAttribute('checked')) {
-        localStorage.setItem("firstTime","done");
+        sessionStorage.setItem("firstTime","done");
     }
 };
 
